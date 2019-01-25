@@ -1,8 +1,9 @@
 import $ from 'jquery';
+import './styles/style.css';
 import { compose } from 'ramda';
+import { toLower, trim } from 'lodash';
 
 import removeDuplicatedSpaces from './utils/remove-duplicated-spaces';
-import toLowerCase from './utils/to-lower-case';
 import setHTMLTo from './utils/set-html-to';
 import getValueFrom from './utils/get-value-from';
 
@@ -11,8 +12,9 @@ let output = $('output'),
 
 let handleInput = compose(
 	setHTMLTo(output),
+	trim,
 	removeDuplicatedSpaces,
-	toLowerCase,
+	toLower,
 	getValueFrom(textarea)
 );
 
