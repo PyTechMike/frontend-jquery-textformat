@@ -1,5 +1,3 @@
-import { trim } from 'lodash';
-
 import splitBy from './split-by';
 import joinWith from './join-with';
 

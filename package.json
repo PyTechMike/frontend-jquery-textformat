@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"neutrino": "8.3.0",
-		"@atomspace/eslint": "2.4.0",
+		"@atomspace/eslint": "2.3.0",
 		"@neutrinojs/web": "8.3.0",
 		"@neutrinojs/jest": "8.3.0"
 	},
